@@ -1,0 +1,11 @@
+/* Iniciando Background do projeto. */
+body {
+  /* background-image: url(images/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; */
+
+  /* Abaixo é a forma de agrupar todos as propriedades citadas acima em uma única propriedade. A ordem funciona da seguinte forma: color, image, repeat, position/size. No size precisa da barra antes */
+  background: url(images/bg-mobile.jpg) no-repeat top center/cover;
+
+}
