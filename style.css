@@ -5,7 +5,21 @@ body {
   background-position: top center;
   background-size: cover; */
 
-  /* Abaixo é a forma de agrupar todos as propriedades citadas acima em uma única propriedade. A ordem funciona da seguinte forma: color, image, repeat, position/size. No size precisa da barra antes */
+  /* Abaixo é a forma de agrupar todos as propriedades citadas acima em uma única propriedade. A ordem funciona da seguinte maneira: color, image, repeat, position/size. No size precisa da barra antes */
   background: url(images/bg-mobile.jpg) no-repeat top center/cover;
+}
+.container {
+  width: 360px;
+  height: 712px;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+#profile img {
+  /* Para alinhar um elemento ao centro do container utilizando margin: auto, o elemento que é "inline" precisa ser transformado para "block", conforme abaixo. Uma outra forma de alinhar um elemento "inline" é usando o elemento pai, onde você declara a propriedade "text-align: center;" e, todos os elementos inline que são filhos serão centralizados.  */
 
+  display: block;
+  /* Display block pega toda a largura da linha disponível para o elemento selecionado.  */
+  width: 112px;
+  margin: auto;
 }
