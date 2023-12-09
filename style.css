@@ -1,4 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@400;500;600;700;800&display=swap");
 /* Iniciando Background do projeto. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   /* background-image: url(images/bg-mobile.jpg);
   background-repeat: no-repeat;
@@ -8,12 +14,16 @@ body {
   /* Abaixo é a forma de agrupar todos as propriedades citadas acima em uma única propriedade. A ordem funciona da seguinte maneira: color, image, repeat, position/size. No size precisa da barra antes */
   background: url(images/bg-mobile.jpg) no-repeat top center/cover;
 }
+body * {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
 .container {
   width: 360px;
-  height: 712px;
-  border: 1px solid red;
-  border-radius: 10px;
-  margin: 0 auto;
+  margin: 56px auto 0px;
+}
+#profile {
+  padding: 24px;
 }
 #profile img {
   /* Para alinhar um elemento ao centro do container utilizando margin: auto, o elemento que é "inline" precisa ser transformado para "block", conforme abaixo. Uma outra forma de alinhar um elemento "inline" é usando o elemento pai, onde você declara a propriedade "text-align: center;" e, todos os elementos inline que são filhos serão centralizados.  */
@@ -22,4 +32,11 @@ body {
   /* Display block pega toda a largura da linha disponível para o elemento selecionado.  */
   width: 112px;
   margin: auto;
+}
+#profile p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 8px;
 }
