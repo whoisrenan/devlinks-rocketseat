@@ -7,7 +7,8 @@
 }
 :root {
   --text-color: white;
-  --bg-url: url(images/bg-mobile.jpg);
+  --bg-url: url(images/bg-desktop.jpg);
+  --bg-url-mobile: url(images/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -16,7 +17,8 @@
 }
 .light {
   --text-color: black;
-  --bg-url: url(images/bg-mobile-light.jpg);
+  --bg-url: url(images/bg-desktop-light.jpg);
+  --bg-url-mobile: url(images/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -30,7 +32,8 @@ body {
   background-size: cover; */
 
   /* Abaixo é a forma de agrupar todos as propriedades citadas acima em uma única propriedade. A ordem funciona da seguinte maneira: color, image, repeat, position/size. No size precisa da barra antes */
-  background: var(--bg-url) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat center/cover;
+  background-attachment: fixed;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -75,6 +78,7 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 .light #switch button {
   right: 0;
@@ -131,4 +135,15 @@ ul li a:hover {
 }
 #social-links a:hover {
   background: var(--highlight-color);
+}
+@media (max-width: 700px) {
+  body {
+    background: var(--bg-url-mobile) no-repeat top center/cover;
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    width: 320px;
+  }
 }
