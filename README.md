@@ -13,13 +13,13 @@ O Gerador de Links é uma ferramenta que permite criar e gerar links. Além diss
 Basta acessar o arquivo HTML e abrir em seu navegador.
 
 ## Funcionalidades
-Adicionar um link
-Remover um link
-Alternar entre o modo escuro e o modo claro
+- Adicionar um link.
+- Remover um link.
+- Alternar entre o modo escuro e o modo claro.
 
 ## Licença
-MIT License
-Copyright (c) 2022
+MIT License.
+Copyright (c) 2022.
 
 ## 🚀 Tecnologias Utilizadas
 
